@@ -1,0 +1,22 @@
+.chart-line-symbol {
+    -fx-background-color: transparent, transparent;
+}
+
+.chart-series-line {
+    -fx-stroke-width: 2px;
+}
+
+.axis-label {
+    -fx-font-size: 20px;
+    -fx-font-smoothing-type: lcd;
+}
+
+.axis {
+    -fx-font-size: 18px;
+    -fx-font-smoothing-type: lcd;
+}
+
+/*
+.chart-plot-background {
+    -fx-background-color: transparent;
+}

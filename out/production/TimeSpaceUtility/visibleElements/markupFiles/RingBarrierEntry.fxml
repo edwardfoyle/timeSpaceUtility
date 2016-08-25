@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<?import visibleElements.NumberField?>
+
+<AnchorPane prefHeight="290.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visibleElements.RingBarrierEntryController">
+    <children>
+        <TextField fx:id="nameLabel" layoutX="14.0" prefHeight="28.0"
+                   prefWidth="311.0" promptText="Cross Street Name"
+                   styleClass="editable-label"
+                   stylesheets="@editable-label.css">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextField>
+        <GridPane fx:id="gridLayout" focusTraversable="false" layoutY="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="216.0" prefWidth="350.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="185.0" minWidth="10.0" prefWidth="185.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="185.0" minWidth="10.0" prefWidth="185.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="92.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="262.0" minHeight="10.0" prefHeight="89.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="262.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <ComboBox fx:id="comboBox1" layoutX="13.0" layoutY="14.0" prefWidth="150.0" promptText="Select Movement" />
+                        <Label layoutX="13.0" layoutY="57.0" prefHeight="17.0" prefWidth="56.0" text="Duration:">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </Label>
+                        <NumberField fx:id="duration1text" layoutX="71.0" layoutY="53.0" prefHeight="25.0" prefWidth="92.0" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                    <children>
+                        <ComboBox fx:id="comboBox2" layoutY="14.0" prefWidth="150.0" promptText="Select Movement" />
+                        <Label layoutY="57.0" prefHeight="17.0" prefWidth="56.0" text="Duration:">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </Label>
+                        <NumberField fx:id="duration2text" layoutX="58.0" layoutY="53.0" prefHeight="25.0" prefWidth="92.0" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                    <children>
+                        <ComboBox fx:id="comboBox3" layoutX="13.0" layoutY="14.0" prefWidth="150.0" promptText="Select Movement" />
+                        <Label layoutX="13.0" layoutY="53.0" prefHeight="17.0" prefWidth="56.0" text="Duration:">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </Label>
+                        <NumberField fx:id="duration3text" layoutX="69.0" layoutY="49.0" prefHeight="25.0" prefWidth="92.0" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <children>
+                        <ComboBox fx:id="comboBox4" layoutY="14.0" prefWidth="150.0" promptText="Select Movement" />
+                        <Label layoutY="53.0" prefHeight="17.0" prefWidth="56.0" text="Duration:">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </Label>
+                        <NumberField fx:id="duration4text" layoutX="58.0" layoutY="49.0" prefHeight="25.0" prefWidth="92.0" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+                    <children>
+                        <Label layoutX="14.0" layoutY="21.0" text="Offset: " />
+                        <NumberField fx:id="offsetText" layoutX="69.0" layoutY="17.0" prefHeight="25.0" prefWidth="92.0" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <children>
+                        <Label layoutY="22.0" text="Distance:" />
+                        <NumberField fx:id="distField" layoutX="57.0" layoutY="18.0" prefHeight="25.0" prefWidth="92.0" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </GridPane>
+        <FlowPane layoutX="41.0" layoutY="242.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+            <children>
+                <StackPane fx:id="TLpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="125.0">
+                    <children>
+                        <Rectangle fx:id="TLrect" fill="TRANSPARENT" height="75.0" stroke="#2f2f2f" strokeWidth="2.0" width="125.0">
+                            <StackPane.margin>
+                                <Insets />
+                            </StackPane.margin>
+                        </Rectangle>
+                        <ImageView fx:id="TLimgView" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+                    </children>
+                </StackPane>
+                <StackPane fx:id="TRpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="125.0">
+                    <children>
+                        <Rectangle fx:id="TRrect" fill="TRANSPARENT" height="75.0" stroke="#2f2f2f" strokeWidth="2.0" width="125.0" />
+                        <ImageView fx:id="TRimgView" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+                    </children>
+                </StackPane>
+                <StackPane fx:id="BLpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="125.0">
+                    <children>
+                        <Rectangle fx:id="BLrect" fill="TRANSPARENT" height="75.0" stroke="#2f2f2f" strokeWidth="2.0" width="125.0" />
+                        <ImageView fx:id="BLimgView" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+                    </children>
+                </StackPane>
+                <StackPane fx:id="BRpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="125.0">
+                    <children>
+                        <Rectangle fx:id="BRrect" fill="TRANSPARENT" height="75.0" stroke="#2f2f2f" strokeWidth="2.0" width="125.0" />
+                        <ImageView fx:id="BRimgView" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+                    </children>
+                </StackPane>
+            </children>
+        </FlowPane>
+        <AnchorPane layoutX="14.0" layoutY="400.0" prefHeight="47.0" prefWidth="311.0">
+            <children>
+                <Label fx:id="error" layoutY="8.0" text="Conflicting movements&#10;or missing data" textFill="RED" />
+                <Label fx:id="confirm" layoutX="252.0" layoutY="17.0" text="Submitted!" textFill="#0ea41d" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

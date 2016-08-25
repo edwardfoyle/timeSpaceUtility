@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TimeSpaceUtility:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TimeSpaceUtility_jar</output-path>
+    <root id="archive" name="TimeSpaceUtility.jar">
+      <element id="module-output" name="TimeSpaceUtility" />
+      <element id="dir-copy" path="$PROJECT_DIR$/src/assets" />
+    </root>
+  </artifact>
+</component>

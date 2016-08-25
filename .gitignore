@@ -1,0 +1,20 @@
+# Git Ignore File
+
+# Resources
+# Basics - https://help.github.com/articles/ignoring-files
+# Repo of .gitignore files - https://github.com/github/gitignore
+
+# Java
+out/
+*.class
+
+# Gradle
+build/
+.gradle/
+
+# IntelliJ
+.idea/
+*.iml
+
+# Manifest
+META-INF/
